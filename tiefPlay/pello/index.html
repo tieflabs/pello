@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>▱tieflab▰ - pello Media Player</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" type="text/css" href="icons/css/all.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icons/tieflab.svg">
+</head>
+<body>
+   <div class="container">
+	 <div class="content">
+	   <div class="video-cover">
+         <video  id="video-player"controlsList="nodownload" data-state="hidden" controls disablePictureInPicture>
+          	<source src="" type="video/mp4">
+        </video>
+        <audio controls id="audio-player"></audio>
+
+  <!-- Video & audio controls -->
+       <div class="drop-zone" id="drop-zone">
+       	<input type="file" accept="video/*, audio/*" id="upload" >
+       </div>
+
+       	<div onclick="playSelected()" class="play"></div>
+       	<label for="upload">
+       		<i class="fa-solid fa-arrow-up-from-bracket"></i>
+       	</label>
+       </div>
+     </div>
+   </div>
+
+ <!-- Loader branding -->
+ <div class="loader">
+		<div class="loader_brand-container">
+			<img class="loader_brand" src="icons/tieflab.svg">
+			<div class="loader_footer">
+				<p class="loader_footer-text">from</p>
+				<p class="loader_footer-brand">
+					<a href="https://www.youtube.com/@tieflabs/featured">▱tieflab▰</a>
+				</p>
+		  </div>
+		</div>
+	</div>
+	<!-- linking JavaScript -->
+ <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
